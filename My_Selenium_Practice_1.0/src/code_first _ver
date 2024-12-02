@@ -1,0 +1,66 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+
+// import com.sun.tools.javac.Main;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class MySeleniumMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//Invoking Browser
+		//Chrome - ChromeDrivber -> Methods
+		//Safari
+		//Firefox
+		//WebDriver close get
+		
+		//WebDriver
+		//Chromedriver.exe - macOS chromedrive ->chromebrowser
+		System.setProperty("webdriver.chrome.driver", "/Users/peterklejment/Documents/Dev_Stuff/chromedriver/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.saucedemo.com");
+		String main_page_title = driver.getTitle();
+		System.out.println("Main Page Title is : " + main_page_title);
+		System.out.println("Actual URL is : " + driver.getCurrentUrl());
+		
+		
+		// user_name - "standard_user"
+		// password  - "secret_sauce"
+		
+		MySeleniumMain mainClass = new MySeleniumMain();
+		UserLogin login = mainClass.new UserLogin(driver);
+		login.LoginCredencials("standard_user" , "secret_sauce");
+		
+
+	}
+	
+	
+	private class UserLogin {
+		private WebDriver driver;
+		
+		public UserLogin(WebDriver driver) {
+			this.driver = driver;
+		}
+		
+		
+		public void LoginCredencials(String username, String password) {
+			
+			driver.findElement(By.xpath("pass//*[@id=\"user-name\"]word")).sendKeys(username);
+			driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(password);
+			driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
+			
+			System.out.println("Logged in as: " + username);
+			
+			Thread.sleep(30000);
+			
+		}
+		
+	}
+	
+
+} 
+
