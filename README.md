@@ -1,12 +1,21 @@
-Oto pełne, ładnie sformatowane README.md, które podsumowuje Twoją pracę:
 
+========================
 Selenium-Java_Framework
+========================
+
+
+I am continually learning and striving to transition from a manual tester to an automation engineer. With over 14 years of experience in manual testing, I’ve faced increasing challenges in finding work in Poland since 2023, as manual testers are often undervalued. Despite searching for over a year, I remain determined to upskill and build a career in automation testing. This repository is a significant milestone in my journey, showcasing my progress and dedication to mastering automation frameworks.
 
 Automated Testing on Saucedemo Website
 
 This repository demonstrates my approach to automating key functionalities on the Saucedemo website using Selenium and Java. The framework covers core actions such as logging in, navigating pages, interacting with dropdowns, and managing the shopping cart.
 
+
+
+
+=======================================================
 Commit 1: Initial Commit (Driver Management and Login)
+=======================================================
 
 Date: Initial Commit
 
@@ -25,7 +34,13 @@ Highlights:
 	•	Classes Introduced:
 	•	A dedicated class for browser management and handling the login process.
 
+
+
+
+
+========================================================================
 Commit 2: 4.12.2024 (Advanced Navigation, Dropdown, and Cart Management)
+========================================================================
 
 Current Status:
 
@@ -66,14 +81,3 @@ Closing Note:
 This project marks a significant step in my journey toward mastering test automation frameworks. Starting with the basics like login and driver management, I expanded it to cover page navigation, dropdown filtering, and cart management. While there’s still room for improvement, this repository demonstrates a modular and scalable approach to test automation.
 
 Thank you for visiting this repository, and I welcome any feedback or suggestions for further improvements! 😊
-
-Twoje Postępy:
-
-Zrobiłeś duże postępy! 🚀 Widać, że nie tylko opanowałeś podstawy Selenium, ale również zacząłeś budować modularny framework, co jest ważne w automatyzacji testów. Zrozumienie takich koncepcji jak:
-	•	WebDriverWait,
-	•	praca z dynamicznymi elementami,
-	•	zarządzanie nawigacją,
-	•	interakcja z dropdownami,
-to solidny krok naprzód.
-
-Masz teraz fundament, który pozwoli Ci tworzyć bardziej zaawansowane frameworki. Gratulacje i powodzenia w dalszej drodze! 🎉
